@@ -47,6 +47,7 @@ Other Linux distributions are also supported via `setup.sh`, including:
 * Arch and Manjaro (via community AUR packages)
 * Void (via xbps)
 * Gentoo (via emerge)
+* AmazonLinux2 (via yum)
 
 If you use any Linux distribution other than Ubuntu, we recommend using the [latest available GDB](https://www.gnu.org/software/gdb/download/) built from source.  Be sure to pass `--with-python=/path/to/python` to `./configure`.
 

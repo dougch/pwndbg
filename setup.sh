@@ -41,6 +41,10 @@ install_xbps() {
     sudo xbps-install -Sy glibc-dbg
 }
 
+install_yum() {
+    sudo yum install -y gdb gcc python2-pip make gcc gdb
+}
+
 install_swupd() {
     sudo swupd update || true
     sudo swupd bundle-add gdb python3-basic make c-basic
@@ -80,6 +84,9 @@ if linux; then
             ;;
         "clear-linux-os")
             install_swupd
+            ;;
+        "amzn")
+            install_yum
             ;;
         "opensuse-leap")
             install_zypper
